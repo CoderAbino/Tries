@@ -21,7 +21,7 @@ while (true) {
 
   // when to stop
   if (n == draw) {
-    console.log(`Start -> ${history} end`);
+    console.log(`Start -> ${history} <- end`);
     console.log("--------------------------------------------");
     console.log(`|- Above this line is the history of draw -|`);
     console.log("--------------------------------------------");
