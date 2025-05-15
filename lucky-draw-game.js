@@ -1,8 +1,8 @@
-//--- set your lucky draw -------
-let draw = 9999;
-//-------------------------------
+//--- set your lucky draw ---------
+let draw = 9999; // only 0 to 9999
+//---------------------------------
 
-//--- don't touch ---------------
+//--- don't touch -----------------
 // this is the draw
 let n;
 
