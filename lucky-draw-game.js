@@ -13,8 +13,7 @@ let i = 0;
 const history = [];
 
 while (true) {
-  n = Math.random(); // generate token between 0 - 1
-  n *= 10000; // convert that token into 4 digit number from 0 to 9999
+  n = Math.random() * 10000; // generate token between 0 - 9999
   n = Math.floor(n); // remove the decimals
   i++; // count generate times
   history.push(n); // add into history
