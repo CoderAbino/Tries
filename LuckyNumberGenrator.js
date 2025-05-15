@@ -1,6 +1,8 @@
+table(3);
 //----------------------------------------------------------------
 // luckCalculator() enter your lucky number inside the function
 // dice()
+// table() input the table you want
 //----------------------------------------------------------------
 function luckCalculator(draw) {
   // main code starts from here
@@ -18,4 +20,11 @@ function luckCalculator(draw) {
 function dice() {
   let n = Math.floor(Math.random() * 6 + 1);
   console.log(`Its ${n}`);
+}
+
+function table(n) {
+  for (let i = 1; i <= 10; i++) {
+    let ans = n * i;
+    console.log(`${n} x ${i} = ${ans}`);
+  }
 }
