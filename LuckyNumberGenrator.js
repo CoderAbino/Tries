@@ -1,31 +1,19 @@
-//--- set your lucky draw ---------
+// set your lucky number
 let draw = 9999; // only 0 to 9999
-//---------------------------------
 
-//--- don't touch -----------------
-// this is the draw
+// main code starts from here
 let n;
-
-// this store count of draw
-let i = 0;
-
-// this will store the history
-const history = [];
+const history = []; // this will store the history
 
 while (true) {
-  n = Math.random() * 10000; // generate token between 0 - 9999
-  n = Math.floor(n); // remove the decimals
-  i++; // count generate times
+  n = Math.floor(Math.random() * 10000); // generate random numbers from 0 to 9999
   history.push(n); // add into history
-
-  // when to stop
   if (n == draw) {
     console.log(`Start -> ${history} <- end`);
-    console.log("--------------------------------------------");
-    console.log(`|- Above this line is the history of draw -|`);
-    console.log("--------------------------------------------");
-    console.log(`|-   We got out ticket in ${i} times :)   -|`);
-    console.log("--------------------------------------------");
+    console.log("-------------------------------------------------------");
+    console.log(`-> History is above this line`);
+    console.log(`-> We got our ticket in ${history.length} times :)`);
+
     break;
   }
 }
